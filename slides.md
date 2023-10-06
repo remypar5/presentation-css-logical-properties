@@ -73,50 +73,44 @@ Based on the writing mode and reading direction
 
 ---
 layout: center
+title: But Why GIF Slide?
 ---
 
 ![Ryan Reynolds asking "But Why?" meme](but-why.gif)
 
 ---
 layout: two-cols-header
+transition: slide-up
 ---
 
-# What’s in It for You?
-
-Some text here
+# But Why Would I?
 
 ::left::
-<ul>
-  <li>Support for RTL languages <em>out of the box</em></li>
-  <li>No need for media queries or other flow specific rules</li>
-  <li>Future proof</li>
-  <li>Keep your CSS readable & maintainable</li>
-  <li v-click="9">Bragging rights</li>
-</ul>
+- _Bragging rights_
+- Support for RTL languages _out of the box_
+- No need for media queries or other flow specific rules
+- Future proof
+- Keep your CSS readable & maintainable
 
 ::right::
-```css {all|1-9|11-14|all}
-.thing.directional {
-  text-align: left;
+```css {all|1-5|6-10|4,9|1-10|12-16|all} {lines:true}
+/* Ye olde directional way */
+img.directional {
+  float: left;
   margin-right: 1rem;
 }
-:dir(rtl) .thing.directional {
-  text-align: right;
+:dir(rtl) img.directional {
+  float: right;
   margin-left: 1rem;
-  margin-right: unset;
+  margin-right: 0;
 }
 
-.thing.logical {
-  text-align: start;
+/* New & shiny logical way */
+img.logical {
+  float: start;
   margin-inline-end: 1rem;
 }
 ```
-
-<style>
-  li.slidev-vclick-target {
-    transition-duration: 2s;
-  }
-</style>
 
 <!--
 **BE AWARE** So far only Firefox and Safari support the :dir() pseudo-class
@@ -125,6 +119,7 @@ Some text here
 
 ---
 layout: two-cols-header
+transition: slide-up
 ---
 
 # I Can Change!
@@ -167,8 +162,13 @@ Think "block" and "inline" instead of "top/bottom" and "left/right"
   <div class="box box--inline">border-inline</div>
 </div>
 
+<!--
+You already know this from the`display`propert
+-->
+
 ---
-layout: image
+layout: full
+transition: slide-up
 ---
 
 # Great! Can I Use It?
@@ -206,6 +206,8 @@ transition: slide-down
 layout: image
 image: tobias-funke-and-scene.gif
 transition: fade-out
+title: Tobias Funke "and scene" meme
+preload: false
 ---
 
 <!-- ![Tobias Fünke saying "And scene" meme](tobias-funke-and-scene.gif) -->
