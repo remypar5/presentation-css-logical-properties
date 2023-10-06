@@ -76,7 +76,7 @@ layout: center
 title: But Why GIF Slide?
 ---
 
-![Ryan Reynolds asking "But Why?" meme](but-why.gif)
+![Ryan Reynolds asking "But Why?" meme](/but-why.gif)
 
 ---
 layout: two-cols-header
@@ -173,7 +173,7 @@ transition: slide-up
 
 # Great! Can I Use It?
 
-<img src="caniuse.png" alt="Caniuse.com screenshot" class="w-3/4">
+<img src="/caniuse.png" alt="Caniuse.com screenshot" class="w-3/4">
 
 <p class="text-right text-sm">Source: 04-10-2023 https://caniuse.com/css-logical-props</p>
 
@@ -204,12 +204,10 @@ transition: slide-down
 
 ---
 layout: image
-image: tobias-funke-and-scene.gif
+image: /tobias-funke-and-scene.gif
 transition: fade-out
 title: Tobias Funke "and scene" meme
 preload: false
 ---
-
-<!-- ![Tobias Fünke saying "And scene" meme](tobias-funke-and-scene.gif) -->
 
 ---
